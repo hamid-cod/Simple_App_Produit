@@ -1,0 +1,48 @@
+.container {
+	/* border: 1px solid black; */
+}
+.quiz {
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.7);
+	/* border: 1px solid black; */
+}
+table {
+	margin: auto;
+}
+td {
+	/* border: 1px solid; */
+}
+#form td {
+	width: 200px;
+	height: 50px;
+	margin: 3px;
+	text-align: center;
+}
+#operation td {
+	width: 50px;
+	height: 50px;
+	margin: 3px;
+	text-align: center;
+}
+#operation td.ligne {
+	background-color: #000;
+	height: 3px;
+}
+#operation td.symbol {
+	width: 25px;
+}
+input {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0px;
+	text-align: center;
+}
+.multiplicande, .multiplicateur {
+	border: none;
+}
+.btns {
+	padding-bottom: 20px;
+	text-align: center;
+	/* border: 1px solid black; */
+}
