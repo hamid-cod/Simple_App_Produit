@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<div>
+			<div class="eq">
 				<form method="post" id="formule" action="">
 					<table id="form">
 						<tr>
@@ -34,7 +34,6 @@
 						</tr>
 					</table>
 				</form>
-				<hr>
 				<?php
 					if (isset($_POST['calcul'])) {
 						$n1 = $_POST['multiplicande'];
@@ -50,7 +49,7 @@
 						$n1 = array_map('intval', str_split($multiplicande));
 						$n2 = array_map('intval', str_split($multiplicateur));
 						$p  = array_map('intval', str_split($produit));
-						$t  = '<table id="operation">';
+						$t  = '<hr><table id="operation">';
 						/* ===================== TR 1 ===================== */
 							$t .= '<tr>';
 							$t .= '<td rowspan="2" class="symbol">X</td>';
@@ -144,6 +143,7 @@
 						return $t;
 					}
 				?>
+			</div>
 		</div>
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>
